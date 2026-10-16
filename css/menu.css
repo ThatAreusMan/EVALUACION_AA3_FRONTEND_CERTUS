@@ -1,0 +1,96 @@
+.encabezado {
+    background-color: #ffffff;
+    border-bottom: 3px solid #ff9800;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.10);
+    padding-block: 10px;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.barra {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px 24px;
+    flex-wrap: wrap;
+}
+
+.logo {
+    display: inline-block;
+    flex: 0 0 auto;
+    line-height: 0;
+}
+
+.logo img {
+    height: clamp(36px, 6vw, 64px);
+    width: auto;
+    max-width: 100%;
+}
+
+.menu {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 6px 14px;
+}
+
+.menu a,
+.boton-salir {
+    text-decoration: none;
+    color: #222222;
+    font-size: 15px;
+}
+
+.menu a:hover,
+.boton-salir:hover {
+    color: #b45f00;
+    text-decoration: underline;
+}
+
+.menu a.activo {
+    color: #003366;
+    font-weight: bold;
+    border-bottom: 2px solid #ff9800;
+}
+
+.saludo {
+    font-size: 15px;
+    font-weight: bold;
+    color: #003366;
+}
+
+.boton-salir {
+    background: none;
+    border: 1px solid #dddddd;
+    border-radius: 4px;
+    padding: 6px 10px;
+    font-family: inherit;
+    cursor: pointer;
+}
+
+.boton-menu {
+    background-color: #ff9800;
+    color: #111 !important;
+    padding: 8px 12px;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+.boton-menu:hover {
+    background-color: #e08600;
+    text-decoration: none !important;
+}
+
+.boton-hamburguesa {
+    display: none;
+    background-color: #003366;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 8px 14px;
+    font-size: 15px;
+    font-family: inherit;
+    cursor: pointer;
+}

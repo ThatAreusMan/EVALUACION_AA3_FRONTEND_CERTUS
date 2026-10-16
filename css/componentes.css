@@ -1,0 +1,291 @@
+.seccion {
+    padding-block: 50px;
+}
+
+.seccion-gris {
+    background-color: #f4f4f4;
+}
+
+.dos-columnas {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.dos-columnas>div {
+    flex: 1;
+}
+
+.dos-columnas p {
+    margin-bottom: 12px;
+}
+
+.servicios-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.tarjeta {
+    background-color: white;
+    width: 23%;
+    min-width: 200px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    border: 1px solid #dddddd;
+    border-radius: 6px;
+    text-align: center;
+}
+
+.tarjeta img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.tarjeta h3,
+.tarjeta p {
+    padding-inline: 18px;
+}
+
+.tarjeta p {
+    font-size: 14px;
+    margin-bottom: 12px;
+}
+
+.tarjeta a {
+    margin-top: auto;
+    padding: 0 18px 18px;
+    font-weight: bold;
+    color: #b45f00;
+}
+
+.resenas-grid {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.resena {
+    background-color: #fffbea;
+    width: 30%;
+    min-width: 220px;
+    flex-grow: 1;
+    padding: 18px;
+    border-left: 5px solid #ff9800;
+}
+
+.estrellas {
+    color: #e6a800;
+    font-size: 22px;
+    margin-bottom: 8px;
+}
+
+.resena p {
+    margin-bottom: 10px;
+}
+
+.formulario-grid {
+    display: flex;
+    gap: 30px;
+    align-items: flex-start;
+}
+
+.formulario-grid>div {
+    width: 40%;
+}
+
+.formulario {
+    width: 60%;
+    background-color: white;
+    padding: 20px;
+    border: 1px solid #dddddd;
+    border-radius: 6px;
+}
+
+.formulario label {
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.formulario input,
+.formulario select,
+.formulario textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #bbbbbb;
+    border-radius: 4px;
+    font-family: inherit;
+    font-size: 15px;
+}
+
+.formulario textarea {
+    resize: vertical;
+}
+
+.formulario button {
+    margin-top: 16px;
+    border: none;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.mensaje {
+    margin-top: 12px;
+    padding: 8px 10px;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.mensaje-error {
+    background-color: #fdecea;
+    color: #cc0000;
+    border: 1px solid #cc0000;
+}
+
+.mensaje-exito {
+    background-color: #e8f5e9;
+    color: #1b6e2d;
+    border: 1px solid #1b6e2d;
+}
+
+.contacto {
+    background-color: #003366;
+    color: white;
+}
+
+.contacto h2 {
+    color: white;
+}
+
+.contacto .etiqueta {
+    color: #ff9800;
+}
+
+.contacto a {
+    color: #ffd27a;
+}
+
+.contacto-grid {
+    display: flex;
+    gap: 30px;
+}
+
+.contacto-grid>div {
+    flex: 1;
+}
+
+.datos-contacto p {
+    margin-bottom: 8px;
+}
+
+footer {
+    background-color: #111111;
+    color: #dddddd;
+    text-align: center;
+    padding: 18px;
+    font-size: 14px;
+}
+
+.dos-columnas ul {
+    padding-left: 20px;
+    margin-bottom: 12px;
+}
+
+.tarjeta .precio {
+    font-weight: bold;
+    color: #003366;
+    font-size: 16px;
+}
+
+.citas-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.cita {
+    background-color: white;
+    width: 30%;
+    min-width: 240px;
+    flex-grow: 1;
+    padding: 18px;
+    border: 1px solid #dddddd;
+    border-left: 5px solid #ff9800;
+    border-radius: 6px;
+}
+
+.cita h3 {
+    text-align: left;
+    margin-top: 0;
+}
+
+.cita p {
+    margin-bottom: 6px;
+}
+
+.cita .estado {
+    display: inline-block;
+    padding: 3px 12px;
+    border-radius: 999px;
+    font-size: 13px;
+    font-weight: bold;
+    color: white;
+}
+
+.cita-pendiente .estado {
+    background-color: #1b6e2d;
+}
+
+.cita-cancelada {
+    border-left-color: #999999;
+    background-color: #f4f4f4;
+}
+
+.cita-cancelada .estado {
+    background-color: #666666;
+}
+
+.boton-cancelar {
+    margin-top: 8px;
+    padding: 8px 12px;
+    background-color: white;
+    color: #cc0000;
+    border: 1px solid #cc0000;
+    border-radius: 4px;
+    font-family: inherit;
+    cursor: pointer;
+}
+
+.boton-cancelar:hover {
+    background-color: #fdecea;
+}
+
+.tarjeta,
+.resena,
+.cita,
+.formulario {
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.10);
+}
+
+.tarjeta,
+.resena,
+.cita {
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.tarjeta:hover,
+.resena:hover,
+.cita:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.18);
+}
+
+.boton-cancelar {
+    transition: background-color 0.2s;
+}

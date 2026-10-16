@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Taller MotorPro: mantenimiento, diagnóstico y reparación para tu vehículo.">
+    <meta name="theme-color" content="#003366">
+    <title>Crear cuenta | Taller MotorPro</title>
+    <link rel="stylesheet" href="/css/base.css">
+    <link rel="stylesheet" href="/css/menu.css">
+    <link rel="stylesheet" href="/css/componentes.css">
+    <link rel="stylesheet" href="/css/res.css">
+</head>
+
+<body>
+    <a class="saltar" href="#contenido">Saltar al contenido</a>
+
+    <header class="encabezado">
+        <div class="contenedor barra">
+            <a class="logo" id="logo-enlace" href="index.html#inicio" aria-label="MotorPro, ir al inicio">
+                <img src="/images/MotorProLogo.png" alt="MotorPro">
+            </a>
+
+            <button class="boton-hamburguesa" id="boton-menu" type="button" aria-controls="menu">Menú</button>
+
+            <nav class="menu" id="menu" aria-label="Navegación principal">
+                <a id="enlace-inicio" href="index.html#inicio">Inicio</a>
+                <a id="enlace-nosotros" href="index.html#nosotros">Nosotros</a>
+                <a id="enlace-servicios" href="index.html#servicios">Servicios</a>
+                <a id="enlace-resenas" href="index.html#resenas">Reseñas</a>
+                <a id="enlace-dejar-resena" href="index.html#dejar-resena">Dejar reseña</a>
+                <a id="enlace-contacto" href="index.html#contacto">Contacto</a>
+                <a id="enlace-ingresar" href="login.html">Ingresar</a>
+                <a class="activo" id="enlace-registro" href="registro.html">Registrarse</a>
+                <a id="enlace-citas" href="citas.html" hidden>Mis citas</a>
+                <span class="saludo" id="saludo" hidden></span>
+                <button class="boton-salir" id="boton-salir" type="button" hidden>Salir</button>
+                <a class="boton-menu" id="enlace-agendar-menu" href="citas.html">Agendar cita</a>
+            </nav>
+        </div>
+    </header>
+
+    <main id="contenido">
+        <section class="seccion seccion-gris" id="registro">
+            <div class="contenedor formulario-grid">
+                <div>
+                    <p class="etiqueta">¿Primera vez?</p>
+                    <h2>Crear cuenta</h2>
+                    <p>Regístrate como cliente. Solo te tomará un minuto.</p>
+                    <p>¿Ya tienes cuenta? <a href="login.html">Ingresa aquí</a>.</p>
+                </div>
+
+                <form class="formulario" id="formulario-registro">
+                    <label for="registro-nombre">Nombre completo</label>
+                    <input id="registro-nombre" name="registro-nombre" type="text" autocomplete="name" required>
+
+                    <label for="registro-correo">Correo</label>
+                    <input id="registro-correo" name="registro-correo" type="email" autocomplete="email" required>
+
+                    <label for="registro-telefono">Teléfono</label>
+                    <input id="registro-telefono" name="registro-telefono" type="tel" autocomplete="tel" required>
+
+                    <label for="registro-clave">Contraseña</label>
+                    <input id="registro-clave" name="registro-clave" type="password" minlength="6"
+                        autocomplete="new-password" required>
+
+                    <label for="registro-confirmar">Confirmar contraseña</label>
+                    <input id="registro-confirmar" name="registro-confirmar" type="password" minlength="6"
+                        autocomplete="new-password" required>
+
+                    <p class="mensaje" id="mensaje-registro" role="alert" hidden></p>
+                    <button class="boton boton-principal" type="submit">Crear cuenta</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="contenedor">
+            <p>© 2026 Taller MotorPro · Proyecto académico</p>
+        </div>
+    </footer>
+
+    <script src="/js/datos.js"></script>
+    <script src="/js/menu.js"></script>
+    <script src="/js/autenticacion.js"></script>
+</body>
+
+</html>

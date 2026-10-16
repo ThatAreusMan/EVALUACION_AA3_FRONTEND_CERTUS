@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Taller MotorPro: mantenimiento, diagnóstico y reparación para tu vehículo.">
+    <meta name="theme-color" content="#003366">
+    <title>Taller Automotriz | Taller MotorPro</title>
+    <link rel="stylesheet" href="/css/base.css">
+    <link rel="stylesheet" href="/css/menu.css">
+    <link rel="stylesheet" href="/css/componentes.css">
+    <link rel="stylesheet" href="/css/index.css">
+    <link rel="stylesheet" href="/css/res.css">
+</head>
+
+<body>
+    <a class="saltar" href="#contenido">Saltar al contenido</a>
+
+    <header class="encabezado">
+        <div class="contenedor barra">
+            <a class="logo" id="logo-enlace" href="index.html#inicio" aria-label="MotorPro, ir al inicio">
+                <img src="/images/MotorProLogo.png" alt="MotorPro">
+            </a>
+
+            <button class="boton-hamburguesa" id="boton-menu" type="button" aria-controls="menu">Menú</button>
+
+            <nav class="menu" id="menu" aria-label="Navegación principal">
+                <a id="enlace-inicio" href="index.html#inicio">Inicio</a>
+                <a id="enlace-nosotros" href="index.html#nosotros">Nosotros</a>
+                <a id="enlace-servicios" href="index.html#servicios">Servicios</a>
+                <a id="enlace-resenas" href="index.html#resenas">Reseñas</a>
+                <a id="enlace-dejar-resena" href="index.html#dejar-resena">Dejar reseña</a>
+                <a id="enlace-contacto" href="index.html#contacto">Contacto</a>
+                <a id="enlace-ingresar" href="login.html">Ingresar</a>
+                <a id="enlace-registro" href="registro.html">Registrarse</a>
+                <a id="enlace-citas" href="citas.html" hidden>Mis citas</a>
+                <span class="saludo" id="saludo" hidden></span>
+                <button class="boton-salir" id="boton-salir" type="button" hidden>Salir</button>
+                <a class="boton-menu" id="enlace-agendar-menu" href="citas.html">Agendar cita</a>
+            </nav>
+        </div>
+    </header>
+
+    <main id="contenido">
+        <section class="hero" id="inicio">
+            <div class="contenedor hero-grid">
+                <div class="hero-texto">
+                    <p class="etiqueta">Taller MotorPro</p>
+                    <h1>Tu vehículo en buenas manos</h1>
+                    <p>
+                        Mantenimiento, diagnóstico y reparación para mantener tu auto seguro y en buen estado.
+                    </p>
+                    <div class="hero-botones">
+                        <a class="boton boton-principal" href="#servicios">Ver servicios</a>
+                        <a class="boton boton-secundario" id="enlace-agendar-hero" href="citas.html">Agendar cita</a>
+                    </div>
+                </div>
+
+                <div class="hero-imagen">
+                    <img src="/images/motorpro_fondoinicio2.jpg" alt="Automóvil y herramientas de taller">
+                </div>
+            </div>
+        </section>
+
+        <section class="seccion" id="nosotros">
+            <div class="contenedor dos-columnas">
+                <div>
+                    <p class="etiqueta">Nosotros</p>
+                    <h2>Servicio confiable para tu vehículo</h2>
+                    <p>
+                        En MotorPro realizamos revisiones, mantenimiento y reparaciones con atención clara y
+                        responsable.
+                    </p>
+                    <p>
+                        Reserva tu cita desde esta página, elige el servicio que necesitas y llega en el horario
+                        acordado. Esto es lo que puedes esperar de nosotros:
+                    </p>
+                    <ul>
+                        <li>Diagnóstico claro antes de reparar.</li>
+                        <li>Precio informado antes de iniciar el trabajo.</li>
+                        <li>Horario reservado a tu nombre, sin esperas largas.</li>
+                    </ul>
+                </div>
+
+                <div class="imagen-presentacion">
+                    <img src="/images/mecanicos_con_herramientas.jpg" alt="Mecánico con herramientas" loading="lazy">
+
+                </div>
+            </div>
+        </section>
+
+        <section class="seccion seccion-gris" id="servicios">
+            <div class="contenedor">
+                <div class="titulo-seccion">
+                    <p class="etiqueta">Nuestros servicios</p>
+                    <h2>¿Qué podemos hacer por tu auto?</h2>
+                </div>
+
+                <div class="servicios-grid" id="lista-servicios"></div>
+            </div>
+        </section>
+
+        <section class="seccion" id="resenas">
+            <div class="contenedor">
+                <div class="titulo-seccion">
+                    <p class="etiqueta">Reseñas</p>
+                    <h2>Lo que dicen nuestros clientes</h2>
+                </div>
+
+                <div class="resenas-grid" id="lista-resenas"></div>
+            </div>
+        </section>
+
+        <section class="seccion seccion-gris" id="dejar-resena">
+            <div class="contenedor formulario-grid">
+                <div>
+                    <p class="etiqueta">Tu opinión importa</p>
+                    <h2>Dejar una reseña</h2>
+                    <p>
+                        Cuéntanos cómo fue tu experiencia en el taller. Debes iniciar sesión para publicarla.
+                    </p>
+                </div>
+
+                <form class="formulario" id="formulario-resena">
+                    <label for="calificacion">Calificación</label>
+                    <select id="calificacion" name="calificacion" required>
+                        <option value="">Selecciona</option>
+                        <option value="5">5 estrellas</option>
+                        <option value="4">4 estrellas</option>
+                        <option value="3">3 estrellas</option>
+                        <option value="2">2 estrellas</option>
+                        <option value="1">1 estrella</option>
+                    </select>
+
+                    <label for="comentario">Comentario</label>
+                    <textarea id="comentario" name="comentario" rows="5" placeholder="Cuéntanos tu experiencia"
+                        required></textarea>
+
+                    <p class="mensaje" id="mensaje-resena" role="alert" hidden></p>
+                    <button class="boton boton-principal" type="submit">Enviar reseña</button>
+                </form>
+            </div>
+        </section>
+
+        <section class="seccion contacto" id="contacto">
+            <div class="contenedor contacto-grid">
+                <div>
+                    <p class="etiqueta">Contacto</p>
+                    <h2>Visita nuestro taller</h2>
+                    <p>Escríbenos o llámanos si tienes dudas antes de agendar tu cita.</p>
+                </div>
+
+                <div class="datos-contacto">
+                    <p><strong>Dirección:</strong> Av. Principal Desconocida, Lima, PE</p>
+                    <p><strong>Teléfono:</strong> <a href="tel:+51999999999">+51 999 999 999</a></p>
+                    <p><strong>Correo:</strong> <a href="mailto:contacto@motorpro.com">contacto@motorpro.com</a></p>
+                    <p><strong>Horario:</strong> Lunes a sábado · 8:00 a. m. a 6:00 p. m.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="contenedor">
+            <p>© 2026 Taller MotorPro · Proyecto académico</p>
+        </div>
+    </footer>
+
+    <script src="/js/datos.js"></script>
+    <script src="/js/menu.js"></script>
+    <script src="/js/servicios.js"></script>
+    <script src="/js/resenas.js"></script>
+</body>
+
+</html>

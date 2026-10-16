@@ -1,0 +1,98 @@
+@media (max-width: 960px) {
+    html {
+        scroll-padding-top: 70px;
+    }
+
+    .boton-hamburguesa {
+        display: block;
+    }
+
+    .menu {
+        display: none;
+        flex-direction: column;
+        align-items: stretch;
+        width: 100%;
+        gap: 0;
+        border-top: 1px solid #dddddd;
+        padding-top: 8px;
+    }
+
+    .menu.abierto {
+        display: flex;
+    }
+
+    .menu a,
+    .saludo,
+    .boton-salir {
+        padding: 12px 6px;
+        border-bottom: 1px solid #dddddd;
+        text-align: left;
+    }
+
+    .boton-salir {
+        border-radius: 0;
+        border-width: 0 0 1px 0;
+        width: 100%;
+    }
+
+    .boton-menu {
+        text-align: center !important;
+        margin-top: 10px;
+    }
+}
+
+@media (max-width: 800px) {
+
+    .hero-grid,
+    .dos-columnas,
+    .formulario-grid,
+    .contacto-grid {
+        display: block;
+    }
+
+    .hero-texto,
+    .hero-imagen,
+    .formulario-grid>div,
+    .formulario {
+        width: 100%;
+    }
+
+    .hero-imagen,
+    .imagen-presentacion,
+    .formulario {
+        margin-top: 20px;
+    }
+
+    .tarjeta,
+    .resena {
+        width: 100%;
+    }
+
+    .seccion {
+        padding-block: 36px;
+    }
+
+    .hero-imagen img {
+        height: 240px;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
+
+    .boton,
+    .tarjeta,
+    .resena,
+    .cita {
+        transition: none;
+    }
+
+    .boton:hover,
+    .tarjeta:hover,
+    .resena:hover,
+    .cita:hover {
+        transform: none;
+    }
+}

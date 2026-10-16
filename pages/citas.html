@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Taller MotorPro: mantenimiento, diagnóstico y reparación para tu vehículo.">
+    <meta name="theme-color" content="#003366">
+    <title>Mis citas | Taller MotorPro</title>
+    <link rel="stylesheet" href="/css/base.css">
+    <link rel="stylesheet" href="/css/menu.css">
+    <link rel="stylesheet" href="/css/componentes.css">
+    <link rel="stylesheet" href="/css/res.css">
+</head>
+
+<body>
+    <a class="saltar" href="#contenido">Saltar al contenido</a>
+
+    <header class="encabezado">
+        <div class="contenedor barra">
+            <a class="logo" id="logo-enlace" href="index.html#inicio" aria-label="MotorPro, ir al inicio">
+                <img src="/images/MotorProLogo.png" alt="MotorPro">
+            </a>
+
+            <button class="boton-hamburguesa" id="boton-menu" type="button" aria-controls="menu">Menú</button>
+
+            <nav class="menu" id="menu" aria-label="Navegación principal">
+                <a id="enlace-inicio" href="index.html#inicio">Inicio</a>
+                <a id="enlace-nosotros" href="index.html#nosotros">Nosotros</a>
+                <a id="enlace-servicios" href="index.html#servicios">Servicios</a>
+                <a id="enlace-resenas" href="index.html#resenas">Reseñas</a>
+                <a id="enlace-dejar-resena" href="index.html#dejar-resena">Dejar reseña</a>
+                <a id="enlace-contacto" href="index.html#contacto">Contacto</a>
+                <a id="enlace-ingresar" href="login.html">Ingresar</a>
+                <a id="enlace-registro" href="registro.html">Registrarse</a>
+                <a class="activo" id="enlace-citas" href="citas.html" hidden>Mis citas</a>
+                <span class="saludo" id="saludo" hidden></span>
+                <button class="boton-salir" id="boton-salir" type="button" hidden>Salir</button>
+                <a class="boton-menu" id="enlace-agendar-menu" href="citas.html">Agendar cita</a>
+            </nav>
+        </div>
+    </header>
+
+    <main id="contenido">
+        <section class="seccion seccion-gris" id="sin-sesion">
+            <div class="contenedor titulo-seccion">
+                <h2>Inicia sesión para agendar</h2>
+                <p>Necesitas una cuenta de cliente para solicitar y ver tus citas.</p>
+                <a class="boton boton-principal" href="login.html">Ingresar</a>
+                <a class="boton boton-secundario" href="registro.html">Crear cuenta</a>
+            </div>
+        </section>
+
+        <section class="seccion seccion-gris" id="cita" hidden>
+            <div class="contenedor formulario-grid">
+                <div>
+                    <p class="etiqueta">Agenda tu visita</p>
+                    <h2>Solicitar una cita</h2>
+                    <p>Elige el servicio, indícanos los datos de tu vehículo y reserva fecha y hora.</p>
+                </div>
+
+                <form class="formulario" id="formulario-cita">
+                    <label for="servicio">Servicio</label>
+                    <select id="servicio" name="servicio" required>
+                        <option value="">Selecciona un servicio</option>
+                    </select>
+
+                    <label for="marca">Marca del vehículo</label>
+                    <input id="marca" name="marca" type="text" placeholder="Ejemplo: Toyota" required>
+
+                    <label for="modelo">Modelo</label>
+                    <input id="modelo" name="modelo" type="text" placeholder="Ejemplo: Yaris" required>
+
+                    <label for="placa">Placa</label>
+                    <input id="placa" name="placa" type="text" placeholder="Ejemplo: ABC-123" required>
+
+                    <label for="fecha">Fecha</label>
+                    <input id="fecha" name="fecha" type="date" required>
+
+                    <label for="hora">Hora</label>
+                    <select id="hora" name="hora" required>
+                        <option value="">Selecciona una hora</option>
+                    </select>
+
+                    <p class="mensaje" id="mensaje-cita" role="alert" hidden></p>
+                    <button class="boton boton-principal" type="submit">Solicitar cita</button>
+                </form>
+            </div>
+        </section>
+
+        <section class="seccion" id="mis-citas" hidden>
+            <div class="contenedor">
+                <div class="titulo-seccion">
+                    <p class="etiqueta">Mis citas</p>
+                    <h2>Tus citas registradas</h2>
+                    <p id="datos-cliente"></p>
+                </div>
+
+                <p id="sin-citas">Aún no tienes citas. Agenda la primera con el formulario de arriba.</p>
+
+                <!-- Las citas se crean desde js/citas.js -->
+                <div class="citas-grid" id="lista-citas"></div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="contenedor">
+            <p>© 2026 Taller MotorPro · Proyecto académico</p>
+        </div>
+    </footer>
+
+    <script src="/js/datos.js"></script>
+    <script src="/js/menu.js"></script>
+    <script src="/js/citas.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,134 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+[hidden] {
+    display: none !important;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 72px;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    color: #333333;
+    background-color: #ffffff;
+    line-height: 1.5;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+a {
+    color: #003366;
+}
+
+:focus-visible {
+    outline: 3px solid #ff9800;
+    outline-offset: 2px;
+}
+
+.saltar {
+    position: absolute;
+    left: -9999px;
+    top: 0;
+    background: #003366;
+    color: #fff;
+    padding: 8px 12px;
+    z-index: 100;
+}
+
+.saltar:focus {
+    left: 0;
+}
+
+.contenedor {
+    width: 90%;
+    max-width: 1100px;
+    margin-inline: auto;
+}
+
+h1 {
+    font-size: clamp(30px, 5vw, 42px);
+    line-height: 1.15;
+    color: #003366;
+    text-align: left;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    text-shadow: 2px 2px 2px #cccccc;
+}
+
+h2 {
+    font-size: clamp(23px, 3.5vw, 28px);
+    color: #222222;
+    margin-bottom: 12px;
+    border-bottom: 3px solid #ff9800;
+    padding-bottom: 6px;
+}
+
+h3 {
+    font-size: 20px;
+    color: #cc0000;
+    text-align: center;
+    margin: 8px 0;
+}
+
+.etiqueta {
+    font-size: 14px;
+    color: #b45f00;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.titulo-seccion {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.titulo-seccion h2 {
+    display: inline-block;
+}
+
+.boton {
+    display: inline-block;
+    text-decoration: none;
+    padding: 10px 16px;
+    border-radius: 4px;
+    margin-right: 8px;
+    margin-top: 10px;
+    transition: background-color 0.2s, transform 0.2s;
+}
+
+.boton:hover {
+    transform: translateY(-2px);
+}
+
+.boton-principal {
+    background-color: #003366;
+    color: white;
+}
+
+.boton-principal:hover {
+    background-color: #002244;
+}
+
+.boton-secundario {
+    background-color: #eeeeee;
+    color: #003366;
+    border: 1px solid #cccccc;
+}
+
+.boton-secundario:hover {
+    background-color: #dddddd;
+}
