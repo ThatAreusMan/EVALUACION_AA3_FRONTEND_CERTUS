@@ -24,28 +24,28 @@ const ListaServicios = [
         Nombre: "Cambio de aceite",
         Descripcion: "Cambio de aceite, filtros y revisión de niveles.",
         Precio: 120,
-        Imagen: "/images/cambio_aceite_prod1.jpeg"
+        Imagen: "../images/cambio_aceite_prod1.jpeg"
     },
     {
         Id: 2,
         Nombre: "Mecánica general",
         Descripcion: "Revisión y reparación de los principales sistemas del vehículo.",
         Precio: 150,
-        Imagen: "/images/mecanica_general_prod2.jpg"
+        Imagen: "../images/mecanica_general_prod2.jpg"
     },
     {
         Id: 3,
         Nombre: "Frenos y suspensión",
         Descripcion: "Chequeo de frenos, amortiguadores, dirección y neumáticos.",
         Precio: 180,
-        Imagen: "/images/frenos_suspension_prod3.jpg"
+        Imagen: "../images/frenos_suspension_prod3.jpg"
     },
     {
         Id: 4,
         Nombre: "Diagnóstico electrónico",
         Descripcion: "Escaneo electrónico para detectar fallas y códigos de error.",
         Precio: 90,
-        Imagen: "/images/diagnostico_electronico_prod4.jpg"
+        Imagen: "../images/diagnostico_electronico_prod4.jpg"
     }
 ];
 
